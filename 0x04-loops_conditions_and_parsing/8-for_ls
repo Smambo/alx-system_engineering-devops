@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#Script that displays cd content in list format, only part of the name after the 1st dash is displayed
+
+list=$(ls)
+for i in $list
+do
+	echo "$i" | cut -d'-' -f 2
+done
