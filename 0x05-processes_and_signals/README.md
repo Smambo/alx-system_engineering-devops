@@ -4,9 +4,9 @@
 ### 0.What is my PID
 Write a Bash script that displays its own PID.
 ```
-smambo@lenovo-ubuntu$ ./0-what-is-my-pid
-4120
-smambo@lenovo-ubuntu$
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$ ./0-what-is-my-pid 
+20592
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$
 ```
 ### 1.List your processes
 Write a Bash script that displays a list of currently running processes.
