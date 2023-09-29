@@ -117,7 +117,9 @@ We stopped our `4-to_infinity_and_beyond` process using `ctrl+c` in the previous
 Write a Bash script that stops `4-to_infinity_and_beyond` process.
 Requirements:
 * You must use `kill`
+
 Terminal #0
+
 ```
 smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$ ./4-to_infinity_and_beyond 
 To infinity and beyond
@@ -140,7 +142,9 @@ I opened 2 terminals in this example, started by running my `4-to_infinity_and_b
 Write a Bash script that stops `4-to_infinity_and_beyond` process.
 Requirements:
 * You cannot use `kill` or `killall`
+
 Terminal #0
+
 ```
 smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$ ./4-to_infinity_and_beyond 
 To infinity and beyond
