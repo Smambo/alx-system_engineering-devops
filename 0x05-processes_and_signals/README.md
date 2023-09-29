@@ -85,7 +85,13 @@ Write a Bash script that displays the PID, along with the process name, of proce
 Requirements:
 * You cannot use `ps`
 ```
-
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$ ./3-show_your_bash_pid_made_easy 
+25916 bash
+27570 bash
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$ ./3-show_your_bash_pid_made_easy 
+25916 bash
+27572 bash
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$
 ```
 ### 4.To infinity and beyond
 Write a Bash script that displays `To infinity and beyond` indefinitely.
