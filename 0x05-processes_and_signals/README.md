@@ -74,7 +74,11 @@ Requirements:
 * You cannot use `pgrep`
 * The third line of your script must be `# shellcheck disable=SC2009`(for more info about ignoring `shellcheck` error [here](https://github.com/koalaman/shellcheck/wiki/Ignore))
 ```
-
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$ ./2-show_your_bash_pid 
+smambo     25916  0.0  0.1  11528  4736 pts/0    Ss   17:02   0:00 bash
+smambo     26672  0.0  0.0   9968  3200 pts/0    S+   17:15   0:00 bash ./2-show_your_bash_pid
+smambo     26674  0.0  0.0   9076  2432 pts/0    S+   17:15   0:00 grep bash
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$
 ```
 ### 3.Show your Bash PID made easy
 Write a Bash script that displays the PID, along with the process name, of processes whose name contain the word `bash`.
