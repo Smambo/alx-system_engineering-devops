@@ -117,9 +117,25 @@ We stopped our `4-to_infinity_and_beyond` process using `ctrl+c` in the previous
 Write a Bash script that stops `4-to_infinity_and_beyond` process.
 Requirements:
 * You must use `kill`
+Terminal #0
 ```
-
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$ ./4-to_infinity_and_beyond 
+To infinity and beyond
+To infinity and beyond
+To infinity and beyond
+To infinity and beyond
+To infinity and beyond
+To infinity and beyond
+To infinity and beyond
+Terminated
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$
 ```
+Terminal #1
+```
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$ ./5-dont_stop_me_now 
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$
+```
+I opened 2 terminals in this example, started by running my `4-to_infinity_and_beyond` Bash script in terminal #0 and then moved on terminal #1 to run `5-dont_stop_me_now`. We can then see in terminal #0 that my process has been terminated.
 ### 6.Stop me if you can
 Write a Bash script that stops `4-to_infinity_and_beyond` process.
 Requirements:
