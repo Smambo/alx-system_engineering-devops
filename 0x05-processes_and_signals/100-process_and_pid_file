@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+#Script about processes and pid file
+
+file=/var/run/myscript.pid
+
+function killCommand {
+	echo "I hate the kill command"
+	sudo rm $file
+	exit
+}
+function fileDelete {
+	sudo rm $file
+	exit
+}
+
+trap killCommand SIGTERM
+trap "echo 'Y U no love me?!'" SIGINT
+trap fileDelete SIGQUIT
+sudo bash -c "echo $$ > $file"
+
+while 'true'
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
