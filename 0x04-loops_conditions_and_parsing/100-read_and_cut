@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#Script displays content of file
+
+while read -r name
+do
+	echo "$name" | cut -d":" -f1,3,6
+done < /etc/passwd
