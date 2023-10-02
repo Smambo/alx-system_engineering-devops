@@ -221,3 +221,125 @@ Terminal #1
 smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$ ./8-beheaded_process 
 smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$
 ```
+
+## Advanced Tasks:
+### 9.Process and PID file
+Write a Bash script that:
+* Creates the file `/var/run/myscript.pid` containing its PID
+* Displays `To infinity and beyond` indefinitely
+* Displays `I hate the kill command` when receiving a SIGTERM signal
+* Displays `Y U no love?!` when receiving a SIGINT signal
+* Deletes the file `/var/run/myscript.pid` and terminates itself when receiving a SIGQUIT or SIGTERM signal
+
+Terminal #0
+
+```
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$ sudo ./100-process_and_pid_file 
+To infinity and beyond
+To infinity and beyond
+To infinity and beyond
+To infinity and beyond
+Terminated
+I hate the kill command
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$
+```
+
+Terminal #1
+
+```
+smambo@lenovo-ubuntu$ sudo pkill -f 100-process_and_pid_file
+smambo@lenovo-ubuntu$
+```
+### 10.Manage my process
+Write a `manage_my_process` Bash script that:
+* Indefinitely writes `I am alive!` to the file `/tmp/my_process`
+* In between every `I am alive!` message, the program should pause for 2 seconds
+Write Bash (init) script `101-manage_my_process` that manages `manage_my_process`. 
+Requirements:
+* When passing the argument `start`:
+  * Starts `manage_my_process`
+  * Creates a file containing its PID in `/var/run/my_process.pid`
+  * Displays `manage_my_process started`
+* When passing the argument `stop`:
+  * Stops `manage_my_process`
+  * Deletes the file `/var/run/my_process.pid`
+  * Displays `manage_my_process stopped`
+* When passing the argument `restart`
+  * Stops `manage_my_process`
+  * Deletes the file `/var/run/my_process.pid`
+  * Starts `manage_my_process`
+  * Creates a file containing its PID in `/var/run/my_process.pid`
+  * Displays `manage_my_process restarted`
+* Displays `Usage: manage_my_process {start|stop|restart}` if any other argument or no argument is passed
+
+```
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$ sudo ./101-manage_my_process 
+Usage: manage_my_process {start|stop|restart}
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$ sudo ./101-manage_my_process start
+manage_my_process started
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$ tail -f -n0 /tmp/my_process
+I am alive!
+I am alive!
+I am alive!
+^C
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$ sudo ./101-manage_my_process stop
+manage_my_process stopped
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$ cat /var/run/my_process.pid
+cat: /var/run/my_process.pid: No such file or directory
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$ tail -f -n0 /tmp/my_process
+^C
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$ sudo ./101-manage_my_process start
+manage_my_process started
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$ cat /var/run/my_process.pid
+28289
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$ sudo ./101-manage_my_process restart
+manage_my_process restarted
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$ cat /var/run/my_process.pid
+28358
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$ tail -f -n0 /tmp/my_process
+I am alive!
+I am alive!
+I am alive!
+I am alive!
+^C
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$
+```
+### 11.Zombie
+Write a C program that creates 5 zombie processes.
+Requirements:
+* For every zombie process created, it displays` Zombie process created, PID: ZOMBIE_PID`
+* Your code should use the Betty style. It will be checked using `betty-style.pl` and `betty-doc.pl`
+* When your code is done creating the parent process and the zombies, use the function below
+
+```
+int infinite_while(void)
+{
+    while (1)
+    {
+        sleep(1);
+    }
+    return (0);
+}
+```
+
+Terminal #0
+
+```
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$ gcc 102-zombie.c -o zombie
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$ ./zombie
+Zombie process created, PID: 32134
+Zombie process created, PID: 32135
+Zombie process created, PID: 32136
+Zombie process created, PID: 32137
+Zombie process created, PID: 32138
+^C
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$
+```
+
+Terminal #1
+
+```
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$ ps aux | grep -e 'Z+.*<defunct>'
+smambo     32318  0.0  0.0   9212  2432 pts/1    S+   21:40   0:00 grep --color=auto -e Z+.*<defunct>
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$
+```
