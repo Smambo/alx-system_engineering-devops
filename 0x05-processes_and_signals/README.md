@@ -202,6 +202,22 @@ smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$
 ```
 ### 8.Beheaded process
 Write a Bash script that kills the process `7-highlander`.
+
+Terminal #0
+
+```
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$ ./7-highlander 
+To infinity and beyond
+To infinity and beyond
+To infinity and beyond
+To infinity and beyond
+Killed
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$
 ```
 
+Terminal #1
+
+```
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$ ./8-beheaded_process 
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x05-processes_and_signals$
 ```
