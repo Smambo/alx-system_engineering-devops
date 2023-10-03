@@ -31,32 +31,32 @@ smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x06-regular_expressions$
 
 ## Tasks:
 ### 0.Simply matching School
-![Regex matching example](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/ec65557f0da1fbfbff6659413885e4d4822f5b1d.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231003%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231003T141609Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=e20f3714365bf61cee82cf81f7d64bcffc11eee6b3f70fa0dece9939c308bb69)
+![Regex matching example](https://camo.githubusercontent.com/fdd104725d530df3b190671b37740b454cdbf734bd706394cee9164a416e6228/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f696e7472616e65742d70726f6a656374732d66696c65732f686f6c626572746f6e7363686f6f6c2d73797361646d696e5f6465766f70732f37382f6a7573742d6d617463682d486f6c626572746f6e2e706e67)
 
 Requirements:
 * The regular expression must match `School`
 * Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
 ### 1.Repetition Token #0
-![example0](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/e7db3c377d46453588fc84f3a975661d142fee91.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231003%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231003T141609Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=7c846832f3edbd4976b8c010885a0e320eb618a9d8f169820c87bfcf813cffaf)
+![example0](https://camo.githubusercontent.com/834505b002f228c3571fda84b51f89e7371fa7cd22883f51773c51602c266311/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f696e7472616e65742d70726f6a656374732d66696c65732f686f6c626572746f6e7363686f6f6c2d73797361646d696e5f6465766f70732f37382f72657065746974696f6e2d746f6b656e2d302e706e67)
 
 Requirements:
 * Find the regular expression that will match the above cases
 * Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
 ### 2.Repetition Token #1
-![example1](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/c59ff11db195d5cf17d1790a5141ae2f234786d2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231003%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231003T141609Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=ea11f7132feedb2e88000eba6dcaddb5f99388d97907edccf31823f7bdcc081f)
+![example1](https://camo.githubusercontent.com/c3b47d0d83c23ad66564afcfabdd49af02055e7bb51db15dd4624a8252915355/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f696e7472616e65742d70726f6a656374732d66696c65732f686f6c626572746f6e7363686f6f6c2d73797361646d696e5f6465766f70732f37382f72657065746974696f6e2d746f6b656e2d312e706e67)
 
 Requirements:
 
 * Find the regular expression that will match the above cases
 * Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
 ### 3.Repetition Token #2
-![example2](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/3b6bf4aeca6a0c2de584e7f5d68d11eef57ce205.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231003%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231003T141609Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=5b7d693f9a5d8cdc50fda34a8cbec808e3ab56a33534082ad609b0b91c19394f)
+![example2](https://camo.githubusercontent.com/3c6a06c4bf11d0bc652a4f195100ff4b257e9e2234c16ef2382c3737a99a3678/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f696e7472616e65742d70726f6a656374732d66696c65732f686f6c626572746f6e7363686f6f6c2d73797361646d696e5f6465766f70732f37382f72657065746974696f6e2d746f6b656e2d322e706e67)
 
 Requirements:
 * Find the regular expression that will match the above cases
 * Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
 ### 4.Repetition Token #3
-![example3](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/f8dbcb9cf5ae569a8645027dc46e81cb372ce28e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231003%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231003T141609Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=6e8916c23b6f16c5126f28be6c3b1093047af2726de5657a0bd5ee13462a3d94)
+![example3](https://camo.githubusercontent.com/84cc4ce7ff8d96d31cb420d74bb6ec8da678ea2a047413ded137b6c28e559a5e/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f696e7472616e65742d70726f6a656374732d66696c65732f686f6c626572746f6e7363686f6f6c2d73797361646d696e5f6465766f70732f37382f72657065746974696f6e2d746f6b656e2d332e706e67)
 
 Requirements:
 * Find the regular expression that will match the above cases
