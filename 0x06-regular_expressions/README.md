@@ -84,7 +84,15 @@ Requirements:
 * Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
 
 ```
-
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x06-regular_expressions$ ./5-beginning_and_end.rb  'hn' | cat -e
+$
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x06-regular_expressions$ ./5-beginning_and_end.rb  'hbn' | cat -e
+hbn$
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x06-regular_expressions$ ./5-beginning_and_end.rb  'hbtn' | cat -e
+$
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x06-regular_expressions$ ./5-beginning_and_end.rb  'h8n' | cat -e
+h8n$
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x06-regular_expressions$
 ```
 ### 6.Call me maybe
 This task is brought to you by a professional advisor [Neha Jain](https://twitter.com/_nehajain), Senior Software Engineer at LinkedIn.
