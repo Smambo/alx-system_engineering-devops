@@ -39,7 +39,7 @@ How is the OSI model organized?
 1. Alphabetically
 2. From the lowest to the highest level
 3. Randomly
-### 1.Types of network
+### [1.Types of network](./1-types_of_network)
 ![Types of network](https://camo.githubusercontent.com/8e635b0a7fb273523c88a465e9a26c5485fde823fb264804d9d2919559f867bf/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f696e7472616e65742d70726f6a656374732d66696c65732f686f6c626572746f6e7363686f6f6c2d73797361646d696e5f6465766f70732f3235392f6b62614e4541312e6a7067)
 
 LAN connect local devices together, WAN connects LANs together, and WANs are operating over the Internet.
@@ -61,7 +61,7 @@ What network do you use when you browse www.google.com from your smartphone (not
 1. Internet
 2. WAN
 3. LAN
-### 2.MAC and IP address
+### [2.MAC and IP address](./2-MAC_and_IP_address)
 ![MAC and IP address](https://camo.githubusercontent.com/476b4b95e12d7f7b315ff10ac9bc89cff04c4888943e2ff6b37b2b77d469efb4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f696e7472616e65742d70726f6a656374732d66696c65732f686f6c626572746f6e7363686f6f6c2d73797361646d696e5f6465766f70732f3235392f5957744b4d55722e6a7067)
 
 Questions:
@@ -78,7 +78,7 @@ What is an IP address?
 2. The unique identifier of a network interface
 3. Is a number that network devices use to connect to networks
 
-### 3.UDP and TCP
+### [3.UDP and TCP](./3-UDP_and_TCP)
 ![UDP and TCP](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/3d92e3c4a470f8ecf4c73db511fcbbadaa002e1c.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231004%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231004T135034Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=5395c201ec69dc49e9f4ae23eefa06ec8cd25fbc35b1282d77881352c04ae1d8)
 
 Let’s fill the empty parts in the drawing above.
@@ -100,13 +100,13 @@ Which statement is correct for the TCP worker:
 1.  `Have you received boxes x, y, z?`
 2.  `May I increase the rate at which I am sending you boxes?`
 
-### 4.TCP and UDP ports
+### [4.TCP and UDP ports](./4-TCP_and_UDP_ports)
 Write a Bash script that displays listening ports:
 
 * That only shows listening sockets
 * That shows the PID and name of the program to which each socket belongs
 
-### 5.Is the host on the network
+### [5.Is the host on the network](./5-is_the_host_on_the_network)
 Write a Bash script that pings an IP address passed as an argument.
 
 Requirements:
