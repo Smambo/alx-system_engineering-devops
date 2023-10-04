@@ -1,7 +1,8 @@
 ## Hey there!
 ## Follow me as I tackle more tasks on Networking basics
 
-![127.0.0.1]()
+![127.0.0.1](https://github.com/Smambo/alx-system_engineering-devops/assets/113464914/00f80311-f9cf-48b0-848b-669bb138864e)
+
 
 ## Learning objectives:
 * What is localhost/127.0.0.1?
