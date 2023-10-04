@@ -79,7 +79,8 @@ What is an IP address?
 3. Is a number that network devices use to connect to networks
 
 ### [3.UDP and TCP](./3-UDP_and_TCP)
-![UDP and TCP](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/3d92e3c4a470f8ecf4c73db511fcbbadaa002e1c.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231004%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231004T135034Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=5395c201ec69dc49e9f4ae23eefa06ec8cd25fbc35b1282d77881352c04ae1d8)
+![UDP and TCP](https://github.com/Smambo/alx-system_engineering-devops/assets/113464914/9383082d-5b33-45f0-9dd2-ae6ca6c58373)
+
 
 Let’s fill the empty parts in the drawing above.
 
