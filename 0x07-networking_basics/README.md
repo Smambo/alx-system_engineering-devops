@@ -25,7 +25,7 @@
 * What tool/protocol is often used to check if a device is connected to a network?
 
 ## Tasks:
-### 0.OSI model
+### [0.OSI model](./0-OSI_model)
 ![What is OSI Model?](https://camo.githubusercontent.com/35ec808754a7cab36bd6d1ea5b12314c5a1f0fa426683cc50385414fb717c87f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f696e7472616e65742d70726f6a656374732d66696c65732f686f6c626572746f6e7363686f6f6c2d73797361646d696e5f6465766f70732f3235392f414a44524e65612e6a7067)
 
 What is the OSI model?
