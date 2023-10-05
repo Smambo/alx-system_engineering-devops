@@ -75,3 +75,37 @@ smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x08-networking_basics_2$ .
 192.168.1.51$
 smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x08-networking_basics_2$
 ```
+
+## Advanced Task:
+
+### [2.Port listening on localhost](./100-port_listening_on_localhost)
+Write a Bash script that listens on port `98` on `localhost`.
+
+Terminal #0
+Starting my script.
+
+```
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x08-networking_basics_2$ sudo ./100-port_listening_on_localhost
+```
+
+Terminal #1
+Connecting to `localhost` on port `98` using `telnet` and typing some text.
+
+```
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x08-networking_basics_2$ telnet localhost 98
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
+Hello World
+test
+```
+
+Terminal #0
+Receiving the text on the other side.
+
+```
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x08-networking_basics_2$ sudo ./100-port_listening_on_localhost 
+[sudo] password for smambo: 
+Hello World
+test
+```
