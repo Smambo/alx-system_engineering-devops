@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Script displays all active IPv4 IPs
 
-ip a | grep "scope" | grep -Po '(?<=inet )[\d.]+'
+ip -4 a | grep "scope" | grep -Po '(?<=inet )[\d.]+'
