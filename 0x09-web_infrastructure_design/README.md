@@ -1,4 +1,5 @@
 # Web infrastructure design
+![image](https://github.com/Smambo/alx-system_engineering-devops/assets/113464914/5ac7849d-b373-4a2c-af51-25855635cda2)
 
 # Tasks:
 ### 0. Simple web stack
