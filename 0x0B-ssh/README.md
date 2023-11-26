@@ -12,6 +12,15 @@ Requirements:
 * You cannot use `-l`
 * You do not need to handle the case of a private key protected by a passphrase
 
+```
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x0B-ssh$ ./0-use_a_private_key 
+Enter passphrase for key '/home/smambo/.ssh/school': 
+ubuntu@345454-web-01:~$ exit
+logout
+Connection to 52.204.237.230 closed.
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x0B-ssh$
+```
+
 ### [1.Create an SSH key pair](./1-create_ssh_key_pair)
 Write a Bash script that creates an RSA key pair.
 
