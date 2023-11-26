@@ -14,3 +14,4 @@
 9. [0x08-networking_basics_2](./0x08-networking_basics_2)
 10. [0x09-web_infrastructure_design](./0x09-web_infrastructure_design)
 11. [0x0A-configuration_management](./0x0A-configuration_management)
+12. [0x0B-ssh](./0x0B-ssh)
