@@ -30,6 +30,32 @@ Requirements:
 * Number of bits in the created key to be created 4096
 * The created key must be protected by the passphrase `betty`
 
+```
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x0B-ssh$ ls
+0-use_a_private_key  1-create_ssh_key_pair  README.md
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x0B-ssh$ ./1-create_ssh_key_pair 
+Generating public/private rsa key pair.
+Your identification has been saved in ./school
+Your public key has been saved in ./school.pub
+The key fingerprint is:
+SHA256:WWcAioSC3yJOZ4mpNkrK/H8ONAfe7TExu8RiayY321Q smambo@lenovo-ubuntu
+The key's randomart image is:
++---[RSA 4096]----+
+|.  ..   ...      |
+|o .. . .   .     |
+| oo.o..  o. o    |
+|.+o+o o oo+o     |
+|+.o. + =SB E     |
+|.=  . + = =      |
+|B .  o * +       |
+|oo    *.=        |
+|  ....oo .       |
++----[SHA256]-----+
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x0B-ssh$ ls
+0-use_a_private_key  1-create_ssh_key_pair  README.md  school  school.pub
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x0B-ssh$
+```
+
 ### [2.Client configuration file](./2-ssh_config)
 Your machine has an SSH configuration file for the local SSH client, let’s configure it to our needs so that you can connect to a server without typing a password. Share your SSH client configuration in your answer file.
 
