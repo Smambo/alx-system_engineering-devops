@@ -1,5 +1,6 @@
 # ssh client configuration file
 
-ForwardAgent yes
+User ubuntu
+Hostname 52.204.237.230
 IdentityFile ~/.ssh/school
 PasswordAuthentication no
