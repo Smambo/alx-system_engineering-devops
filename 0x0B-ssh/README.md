@@ -64,6 +64,80 @@ Requirements:
 * Your SSH client configuration must be configured to use the private key `~/.ssh/school`
 * Your SSH client configuration must be configured to refuse to authenticate using a password
 
+```
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x0B-ssh$ ssh -v ubuntu@52.204.237.230
+OpenSSH_8.9p1 Ubuntu-3ubuntu0.4, OpenSSL 3.0.2 15 Mar 2022
+debug1: Reading configuration data /home/smambo/.ssh/config
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 19: include /etc/ssh/ssh_config.d/*.conf matched no files
+debug1: /etc/ssh/ssh_config line 21: Applying options for *
+debug1: Connecting to 52.204.237.230 [52.204.237.230] port 22.
+debug1: Connection established.
+debug1: identity file /home/smambo/.ssh/school type 0
+debug1: identity file /home/smambo/.ssh/school-cert type -1
+debug1: Local version string SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.4
+debug1: Remote protocol version 2.0, remote software version OpenSSH_8.2p1 Ubuntu-4ubuntu0.5
+debug1: compat_banner: match: OpenSSH_8.2p1 Ubuntu-4ubuntu0.5 pat OpenSSH* compat 0x04000000
+debug1: Authenticating to 52.204.237.230:22 as 'ubuntu'
+debug1: load_hostkeys: fopen /home/smambo/.ssh/known_hosts2: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts2: No such file or directory
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug1: kex: algorithm: curve25519-sha256
+debug1: kex: host key algorithm: ssh-ed25519
+debug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: SSH2_MSG_KEX_ECDH_REPLY received
+debug1: Server host key: ssh-ed25519 SHA256:LLqb/9Etjn0Ukr6OsAWYNPJqdznwj19IzAB9mBz+NcM
+debug1: load_hostkeys: fopen /home/smambo/.ssh/known_hosts2: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts2: No such file or directory
+debug1: Host '52.204.237.230' is known and matches the ED25519 host key.
+debug1: Found key in /home/smambo/.ssh/known_hosts:7
+debug1: rekey out after 134217728 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug1: SSH2_MSG_NEWKEYS received
+debug1: rekey in after 134217728 blocks
+debug1: get_agent_identities: bound agent to hostkey
+debug1: get_agent_identities: ssh_fetch_identitylist: agent contains no identities
+debug1: Will attempt key: /home/smambo/.ssh/school RSA SHA256:SkwnC3iOzHkFctLhoeRGG6u1MDwzTF8rlOKsAjmBykU explicit
+debug1: SSH2_MSG_EXT_INFO received
+debug1: kex_input_ext_info: server-sig-algs=<ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com>
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug1: Authentications that can continue: publickey
+debug1: Next authentication method: publickey
+debug1: Offering public key: /home/smambo/.ssh/school RSA SHA256:SkwnC3iOzHkFctLhoeRGG6u1MDwzTF8rlOKsAjmBykU explicit
+debug1: Server accepts key: /home/smambo/.ssh/school RSA SHA256:SkwnC3iOzHkFctLhoeRGG6u1MDwzTF8rlOKsAjmBykU explicit
+Authenticated to 52.204.237.230 ([52.204.237.230]:22) using "publickey".
+debug1: channel 0: new [client-session]
+debug1: Requesting no-more-sessions@openssh.com
+debug1: Entering interactive session.
+debug1: pledge: filesystem
+debug1: client_input_global_request: rtype hostkeys-00@openssh.com want_reply 0
+debug1: client_input_hostkeys: searching /home/smambo/.ssh/known_hosts for 52.204.237.230 / (none)
+debug1: client_input_hostkeys: searching /home/smambo/.ssh/known_hosts2 for 52.204.237.230 / (none)
+debug1: client_input_hostkeys: hostkeys file /home/smambo/.ssh/known_hosts2 does not exist
+debug1: Remote: /home/ubuntu/.ssh/authorized_keys:2: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding
+debug1: Remote: /home/ubuntu/.ssh/authorized_keys:2: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding
+debug1: Sending environment.
+debug1: channel 0: setting env LC_ADDRESS = "en_ZA.UTF-8"
+debug1: channel 0: setting env LC_NAME = "en_ZA.UTF-8"
+debug1: channel 0: setting env LC_MONETARY = "en_ZA.UTF-8"
+debug1: channel 0: setting env LC_PAPER = "en_ZA.UTF-8"
+debug1: channel 0: setting env LANG = "en_GB.UTF-8"
+debug1: channel 0: setting env LC_IDENTIFICATION = "en_ZA.UTF-8"
+debug1: channel 0: setting env LC_TELEPHONE = "en_ZA.UTF-8"
+debug1: channel 0: setting env LC_MEASUREMENT = "en_ZA.UTF-8"
+debug1: channel 0: setting env LC_TIME = "en_ZA.UTF-8"
+debug1: channel 0: setting env LC_NUMERIC = "en_ZA.UTF-8"
+debug1: client_global_hostkeys_private_confirm: server used untrusted RSA signature algorithm ssh-rsa for key 0, disregarding
+debug1: update_known_hosts: known hosts file /home/smambo/.ssh/known_hosts2 does not exist
+ubuntu@345454-web-01:~$
+```
+
 ### 3.Let me in!
 Add the SSH public key below to your server so that we can connect using the `ubuntu` user.
 
