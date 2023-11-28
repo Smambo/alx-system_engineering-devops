@@ -33,6 +33,35 @@ Requirements:
 * As an answer file, write a Bash script that configures a new Ubuntu machine to respect above requirements (this script will be run on the server itself)
 * You can’t use `systemctl` for restarting `nginx`
 
+Server terminal:
+
+```
+ubuntu@345454-web-01:~$ ./1-install_nginx_web_server > /dev/null 2>&1
+ubuntu@345454-web-01:~$ 
+ubuntu@345454-web-01:~$ curl localhost
+Hello World!
+ubuntu@345454-web-01:~$
+```
+
+Local terminal:
+
+```
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x0C-web_server$ curl 52.204.237.230/
+Hello World!
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x0C-web_server$ curl -sI 52.204.237.230/
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Tue, 28 Nov 2023 15:14:55 GMT
+Content-Type: text/html
+Content-Length: 13
+Last-Modified: Tue, 28 Nov 2023 15:13:47 GMT
+Connection: keep-alive
+ETag: "656603ab-d"
+Accept-Ranges: bytes
+
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x0C-web_server$
+```
+
 ### [2. Setup a domain name](./2-setup_a_domain_name)
 
 ### [3. Redirection](./3-redirection)
