@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# command to debug the docker issue
+
+sudo service apache2 start
