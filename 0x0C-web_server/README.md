@@ -109,3 +109,17 @@ Requirements:
 * The page must contain the string `Ceci n'est pas une page`
 * Using what you did with `3-redirection`, write `4-not_found_page_404` so that it configures a brand new Ubuntu machine to the requirements asked in this task
 
+```
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x0C-web_server$ curl -sI 52.204.237.230/xyz
+HTTP/1.1 404 Not Found
+Server: nginx/1.18.0 (Ubuntu)
+Date: Tue, 28 Nov 2023 19:44:49 GMT
+Content-Type: text/html
+Content-Length: 24
+Connection: keep-alive
+ETag: "6566430a-18"
+
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x0C-web_server$ curl 52.204.237.230/xyzfoo
+Ceci n'est pas une page
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x0C-web_server$
+```
