@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# installs nginx web server & returns page containing a string
+
+sudo apt-get -y update
+sudo apt-get -y install nginx
+string_file=/usr/share/nginx/html/index.html
+sudo bash -c "echo 'Hello World!' > $string_file"
+sudo service nginx start
