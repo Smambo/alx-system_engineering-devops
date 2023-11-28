@@ -1,5 +1,6 @@
 ## 0x0C. Web Servers
 ## About:
+![image](https://github.com/Smambo/alx-system_engineering-devops/assets/113464914/e33c8ccb-fd03-4ff7-a441-cfb04746e192)
 
 * Clients are the typical web user's internet-connected devices (for example, your computer connected to your Wi-Fi, or your phone connected to your mobile network) and web-accessing software available on those devices (usually a web browser like Firefox or Chrome).
 
