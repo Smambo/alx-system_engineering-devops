@@ -64,6 +64,33 @@ smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x0C-web_server$
 
 ### [2. Setup a domain name](./2-setup_a_domain_name)
 
+```
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x0C-web_server$ cat 2-setup_a_domain_name 
+smambodev.tech
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x0C-web_server$ 
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x0C-web_server$ dig smambodev.tech
+
+; <<>> DiG 9.18.18-0ubuntu0.22.04.1-Ubuntu <<>> smambodev.tech
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 20273
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;smambodev.tech.			IN	A
+
+;; AUTHORITY SECTION:
+tech.			3600	IN	SOA	ns0.centralnic.net. hostmaster.centralnic.net. 362995 900 1800 6048000 3600
+
+;; Query time: 123 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (UDP)
+;; WHEN: Tue Nov 28 18:07:55 SAST 2023
+;; MSG SIZE  rcvd: 108
+
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x0C-web_server$
+```
 ### [3. Redirection](./3-redirection)
 Configure your Nginx server so that `/redirect_me` is redirecting to another page.
 
