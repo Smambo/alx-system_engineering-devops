@@ -100,6 +100,19 @@ Requirements:
 * You answer file should be a Bash script containing commands to automatically configure a Ubuntu machine to respect above requirements
 * Using what you did with `1-install_nginx_web_server`, write `3-redirection` so that it configures a brand new Ubuntu machine to the requirements asked in this task
 
+```
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x0C-web_server$ curl -sI 52.204.237.230/redirect_me/
+HTTP/1.1 301 Moved Permanently
+Server: nginx/1.18.0 (Ubuntu)
+Date: Wed, 29 Nov 2023 11:50:43 GMT
+Content-Type: text/html
+Content-Length: 178
+Connection: keep-alive
+Location: https://www.youtube.com/watch?v=QH2-TGUlwu4
+
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x0C-web_server$
+```
+
 ### [4. Not found page 404](./4-not_found_page_404)
 Configure your Nginx server to have a custom 404 page that contains the string `Ceci n'est pas une page`.
 
