@@ -38,14 +38,15 @@ Requirements:
 * Version must be `2.1.0`
 
 ```
-root@4da059d3fcb7:/alx-system_engineering-devops/0x0A-configuration_management# puppet apply 1-install_a_package.pp 
-Notice: Compiled catalog for 4da059d3fcb7.ec2.internal in environment production in 1.51 seconds
-Notice: /Stage[main]/Main/Package[flask]/ensure: created
-Notice: Applied catalog in 79.69 seconds
-root@4da059d3fcb7:/alx-system_engineering-devops/0x0A-configuration_management# flask --version
-Python 3.8.10
-Flask 2.1.0
-Werkzeug 2.1.1
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x0A-configuration_management$ sudo puppet apply 1-install_a_package.pp 
+[sudo] password for smambo: 
+Notice: Compiled catalog for lenovo-ubuntu.home in environment production in 0.50 seconds
+Notice: /Stage[main]/Main/Exec[install flask]/returns: executed successfully
+Notice: Applied catalog in 9.87 seconds
+smambo@lenovo-ubuntu:~/alx-system_engineering-devops/0x0A-configuration_management$ flask --version
+Python 3.10.12
+Flask 3.0.0
+Werkzeug 3.0.1
 ```
 
 ### [2. Execute a command](./2-execute_a_command.pp)
