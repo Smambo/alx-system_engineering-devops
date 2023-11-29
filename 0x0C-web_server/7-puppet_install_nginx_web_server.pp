@@ -1,6 +1,6 @@
 #installs and configures nginx server
 exec {'update system':
-  command => 'sudo apt-get -y update',
+  command => '/usr/bin/apt-get update',
 }
 
 package {'nginx':
