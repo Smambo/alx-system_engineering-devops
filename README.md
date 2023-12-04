@@ -17,4 +17,4 @@
 12. [0x0B-ssh](./0x0B-ssh)
 13. [0x0C-web_server](./0x0C-web_server)
 14. [0x0D-web_stack_debugging_0](./0x0D-web_stack_debugging_0)
-15. [attack_is_the_best_defense](./attack_is_the_best_defense)
+15. [0x0F-load_balancer](./0x0F-load_balancer)
