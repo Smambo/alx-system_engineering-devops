@@ -5,31 +5,24 @@
 sudo apt-get -y update
 
 # install HAproxy
-sudo apt-get -y install haproxy
+sudo apt-get -y install --no-install-recommends software-properties-common
+sudo add-apt-repository -y ppa:vbernat/haproxy-2.4
+sudo apt-get -y update
+sudo apt-get -y install haproxy=2.4.\*
+
+echo "ENABLED=1" > /etc/default/haproxy
 
 # configures HAproxy
-sudo tee /etc/haproxy/haproxy.cfg > /dev/null <<EOT
-global
-	daemon
-	maxconn 256
+echo "
+   listen load_balancer
+   bind *:80
+   mode http
+   balance roundrobin
+   option httpclose
+   option forwardfor
+   server 345454-web-01 52.204.237.230:80 check
+   server 345454-web-02 54.152.184.95:80 check
+" >> /etc/haproxy/haproxy.cfg
 
-defaults
-	mode http
-	timeout connect 5000ms
-	timeout client 50000ms
-	timeout server 50000ms
-
-frontend https_front
-	bind *:80
-	default_backend http_back
-
-backend http_back
-	balance roundrobin
-	server web-01 52.204.237.230:80 check
-	server web-02 54.152.184.95:80 check
-
-EOT
-
-sudo haproxy -c -f /etc/haproxy/haproxy.cfg
-sudo sytemctl start haproxy
-sudo systemctl enable haproxy
+sudo service haproxy start
+sudo service haproxy enable
