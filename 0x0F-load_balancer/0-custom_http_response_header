@@ -1,8 +1,43 @@
 #!/usr/bin/env bash
 # script sets up custom header on web servers
 
+# update dependencies & install nginx
 sudo apt-get -y update
+sudo apt-get -y upgrade
 sudo apt-get -y install nginx
-file="/etc/nginx/sites-available/default"
-sudo sed -i "21i add_header X-Served-By $HOSTNAME;" $file
-sudo service nginx restart
+
+#starts nginx server
+sudo service nginx start
+
+# backup existing nginx config
+sudo cp /etc/nginx/nginx.conf /etc/nginx/nginx.conf.bak
+
+# create new config
+sudo tee /etc/nginx/nginx.conf > /dev/null <<EOF
+user www-data;
+worker_processes 4;
+pid /var/run/nginx.pid;
+
+events {
+  worker_connections 768;
+}
+
+http {
+  sendfile on;
+  server_tokens off;
+  add_header X-Served-By $HOSTNAME;
+
+  server {
+    listen 80 default_server;
+    server_name localhost;
+    location / {
+      root /var/www/html;
+      index index.html index.htm;
+    }
+  }
+}
+EOF
+
+# restart nginx server
+sudo /usr/sbin/nginx -s stop
+sudo /usr/sbin/nginx
