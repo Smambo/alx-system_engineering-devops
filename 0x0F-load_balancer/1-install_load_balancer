@@ -25,4 +25,8 @@ backend my_servers
    option httpclose
 ' > /etc/haproxy/haproxy.cfg"
 
-sudo service haproxy start
+# makes HAproxy start on boot
+sudo systemctl enable haproxy
+
+# start HAproxy
+sudo systemctl start haproxy
