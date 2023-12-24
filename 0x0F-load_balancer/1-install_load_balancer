@@ -11,8 +11,9 @@ sudo echo "ENABLED=1" >> sudo /etc/default/haproxy
 
 # configures HAproxy
 sudo bash -c "echo '
-frontend smambodev.tech
+frontend http
    bind *:80
+   mode http
    option forwardfor
    default_backend my_servers
 
