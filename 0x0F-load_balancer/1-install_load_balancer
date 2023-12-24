@@ -10,7 +10,7 @@ sudo apt-get -y install haproxy=2.4.\*
 sudo echo "ENABLED=1" >> sudo /etc/default/haproxy
 
 # configures HAproxy
-echo "
+sudo bash -c "echo '
 frontend smambodev.tech
    bind *:80
    option forwardfor
@@ -22,6 +22,6 @@ backend my_servers
    server 345454-web-02 54.152.233.230:80 check
    option httpchk
    option httpclose
-" >> /etc/haproxy/haproxy.cfg
+' > /etc/haproxy/haproxy.cfg"
 
 sudo service haproxy start
