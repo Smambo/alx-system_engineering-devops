@@ -18,8 +18,8 @@ frontend smambodev.tech
 
 backend my_servers
    balance roundrobin
-   server 345454-web-01 52.204.237.230:80 check
-   server 345454-web-02 52.86.147.166:80 check
+   server 345454-web-01 54.172.41.19:80 check
+   server 345454-web-02 54.152.233.230:80 check
    option httpchk
    option httpclose
 " >> /etc/haproxy/haproxy.cfg
