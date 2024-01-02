@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Import modules for api script"""
-from sys import argv
 import requests
+from sys import argv
 
 
 def todo_api(userid):
