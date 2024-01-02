@@ -17,8 +17,8 @@ def json_export():
                 'https://jsonplaceholder.typicode.com/todos?userId={}'.format(
                     user[0])).json()
         records = [{"task": line.get('title'), "completed":
-                    line.get('completed'), "username": user[1]}
-                    for line in data]
+                    line.get('completed'), "username":
+                    user[1]} for line in data]
         dumps[user[0]] = records
 
     with open('todo_all_employees.json', 'w') as f:
