@@ -9,13 +9,19 @@ def number_of_subscribers(subreddit):
     Function gets subscriber count
     from subreddit using Reddit API.
     """
+    url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
+
     head = {'User-Agent': 'Sima Njoli'}
-    sub_count = get(
-            'https://www.reddit.com/r/{}/about.json'.format(
-                subreddit), headers=head).json()
-    try:
-        return (sub_count.get('data').get('subscribers'))
-    except Exception:
+
+    response = get(url, headers=head)
+
+    if response.status_code == 200:
+        data = response.json()
+        sub_count = data['data']['subscribers']
+        return (sub_count)
+    elif response.status_code == 404:
+        return (0)
+    else:
         return (0)
 
 
