@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Import modules."""
-from sys import argv
 from requests import get
+from sys import argv
 
 
 def number_of_subscribers(subreddit):
