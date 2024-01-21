@@ -10,3 +10,4 @@ The best way to work through what happened during an incident and capture any le
 
 
 [0. My first postmortem](https://docs.google.com/document/d/1JjaUqS-S9hGZzDmm6YsaVex0PS_aGyUxOQKG0bmByqI/edit?usp=sharing)<br>
+[1. Make people want to read your postmortem](https://medium.com/@smambo85/my-first-incident-postmortem-39a2c64b23a1)<br>
