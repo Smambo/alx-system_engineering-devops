@@ -29,3 +29,4 @@
 24. [0x0D-web_stack_debugging_0](./0x0D-web_stack_debugging_0)
 25. [0x0E-web_stack_debugging_1](./0x0E-web_stack_debugging_1)
 26. [0x0F-load_balancer](./0x0F-load_balancer)
+27. [0x1B-web_stack_debugging_4](./0x1B-web_stack_debugging_4)
