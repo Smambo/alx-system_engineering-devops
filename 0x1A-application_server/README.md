@@ -1,0 +1,3 @@
+## Application Servers
+
+Despite the contrast implied by “application server vs. web server,” on the Internet the two types of server are usually deployed together for a common purpose: fulfilling user requests for content from a website. An application server’s fundamental job is to provide its clients with access to what is commonly called business logic, which generates dynamic content; that is, it’s code that transforms data to provide the specialized functionality offered by a business, service, or application. An application server’s clients are often applications themselves, and can include web servers and other application servers.
