@@ -19,8 +19,8 @@ frontend http
 
 backend my_servers
    balance roundrobin
-   server 345454-web-01 174.129.54.202:80 check
-   server 345454-web-02 100.25.135.67:80 check
+   server 345454-web-01 54.160.87.12:80 check
+   server 345454-web-02 100.24.236.138:80 check
    option httpchk
    option httpclose
 ' > /etc/haproxy/haproxy.cfg"
